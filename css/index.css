@@ -783,7 +783,7 @@ content p {
 /* layer5 */
 
 .main5 {
-    min-height: 1500px;
+    min-height: 1700px;
     height: auto;
     background-color: white;
     position: relative;
@@ -836,11 +836,11 @@ content p {
 .main5 .bg {
     position: absolute;
     opacity: 1;
-    top: 780px;
+    top: 680px;
     left: 0%;
     width: 100%;
     min-width: 100%;
-    height: 850px;
+    height: 1050px;
     object-fit: cover;
     object-position: top center;
     -webkit-mask-image: linear-gradient(to bottom, transparent 0%, rgba(255, 255, 255, 0.4) 5%, black 25%);
@@ -1028,6 +1028,19 @@ content p {
     line-height: 1;
 }
 
+.main5 .head {
+    position: absolute;
+    z-index: 20;
+    top: 1550px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Poppins', sans-serif;
+    font-size: 38px;
+    font-weight: 500;
+    text-align: center;
+    color: #111827;
+}
+
 /* ============================================================
    Why Trust Us Section (.main6) - Matching Figma Screenshot 2
    ============================================================ */
@@ -1036,11 +1049,9 @@ content p {
     position: relative;
     background-color: white;
     z-index: 12;
-    margin-top: -100px;
-    border-top-left-radius: 50% 90px;
-    border-top-right-radius: 50% 90px;
+    min-height: 1000px;
+    margin-top: -10px;
     padding: 70px 20px 100px 20px;
-    box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.06);
 }
 
 .why-trust-content {
@@ -1072,8 +1083,11 @@ content p {
 }
 
 .stat-left .img-99 {
-    height: 180px;
-    width: auto;
+    position: absolute;
+    top: 0;
+    left: 400px;
+    height: 370px;
+    width: 520px;
     object-fit: contain;
 }
 
@@ -1081,12 +1095,15 @@ content p {
     height: 70px;
     width: auto;
     object-fit: contain;
-    margin-left: 8px;
-    margin-top: 20px;
+    margin-left: 420px;
+    margin-top: 140px;
 }
 
 .stat-right {
-    max-width: 400px;
+    width: 460px;
+    position: absolute;
+    top: 290px;
+    left: 45.5%;
 }
 
 .stat-desc {
@@ -1103,17 +1120,20 @@ content p {
 }
 
 .trust-list {
+    position: absolute;
     display: flex;
     flex-direction: column;
     gap: 30px;
     max-width: 650px;
-    margin: 0 auto;
-    padding-left: 50px;
+    margin-left: 20px;
+    padding-left: 20px;
+    padding-top: 130px;
+    margin-bottom: 40px;
 }
 
 .trust-item h2 {
     font-family: 'Poppins', sans-serif;
-    font-size: 17px;
+    font-size: 20px;
     font-weight: 800;
     color: #111827;
     letter-spacing: 0.5px;
@@ -1122,8 +1142,9 @@ content p {
 
 .trust-item p {
     font-family: 'Poppins', sans-serif;
-    font-size: 14px;
+    font-size: 20px;
     color: #4b5563;
     line-height: 1.55;
-    margin: 0;
+    width: 700px;
+    margin-left: 80px;
 }
