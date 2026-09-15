@@ -1,0 +1,887 @@
+#navi {
+    animation: boatCrash 3.5s ease-out both;
+}
+
+content .hero {
+    animation: heroFloat 2s ease-out 0.2s both;
+}
+
+.hero-title {
+    animation: fadeIn 3s ease-out 0.3s both;
+}
+
+.content {
+    animation: fadeIn 3s ease-out 0.5s both;
+}
+
+.info-head {
+    animation: fadeIn 3s ease-out 0.6s both;
+}
+
+.info-head2 {
+    animation: fadeIn 3s ease-out 0.8s both;
+}
+
+content p {
+    animation: fadeIn 3s ease-out 1.0s both;
+}
+
+.button-start {
+    animation: fadeIn 3s ease-out 0.7s both;
+    cursor: pointer;
+    z-index: 10;
+    transition: transform 0.8s ease-out, box-shadow 0.8s ease-out;
+}
+
+.button-start:hover {
+    transform: scale(1.1) !important;
+    transition: transform 5s linear;
+}
+
+.planeimage {
+    pointer-events: none;
+}
+
+.planeimage .plane {
+    clip-path: inset(0 100% 0 0);
+    animation: drawLine 3.2s ease-in-out 1.2s both;
+}
+
+.planeimage .planeimg {
+    transform-origin: center center;
+    pointer-events: none;
+    animation: planeFly 3.2s ease-in-out 1.2s both;
+}
+
+.card:hover .bottomtri {
+    animation: both bottomtri 1s linear;
+
+}
+
+.card:hover .toptri {
+    animation: both toptri 1s linear;
+}
+
+.card:hover i,
+.card:hover .corner {
+    animation: both tritop 1s linear;
+}
+
+.card:hover .bottom {
+    animation: both tribottom 1s linear;
+}
+
+
+#destination h1 {
+    animation: scrollFadeIn linear both;
+    animation-timeline: view();
+    animation-range: entry 24% exit 5%;
+}
+
+#destination .card {
+    animation: scrollFadeIn linear both;
+    animation-timeline: view();
+}
+
+#destination .card:nth-child(1) {
+    animation-range: entry 24% entry 59%;
+}
+
+#destination .card:nth-child(2) {
+    animation-range: entry 32% entry 67%;
+}
+
+#destination .card:nth-child(3) {
+    animation-range: entry 40% entry 75%;
+}
+
+#destination .card:nth-child(4) {
+    animation-range: entry 24% entry 59%;
+}
+
+#destination .card:nth-child(5) {
+    animation-range: entry 32% entry 67%;
+}
+
+#destination .card:nth-child(6) {
+    animation-range: entry 40% entry 75%;
+}
+
+.carousel-item.active .active-img {
+    animation: carouselActiveFadeIn 0.6s both;
+
+}
+
+.carousel-item.active .head h1,
+.head h1,
+.kerala {
+    animation: carouselActiveFadeIn 0.6s both;
+
+}
+
+.carousel-item.active .side-img {
+    animation: carouselSideFadeIn 0.7s ease-out both;
+
+}
+
+@keyframes carouselActiveFadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.92) translateY(10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+@keyframes carouselSideFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateX(15px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+
+/* Keyframes */
+@keyframes tritop {
+    0% {
+        transform: translate(150px, -150px);
+    }
+}
+
+@keyframes tribottom {
+    0% {
+        transform: translate(-150px, 150px);
+    }
+}
+
+@keyframes bottomtri {
+    0% {
+        width: 0px;
+        height: 0px;
+        border-right: 0px solid transparent;
+        border-bottom: 0px solid #706262;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        opacity: 0.46;
+    }
+
+    100% {
+        width: 0px;
+        height: 0px;
+        border-right: 300px solid transparent;
+        border-bottom: 300px solid #706262;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        opacity: 0.46;
+    }
+}
+
+@keyframes toptri {
+    0% {
+        width: 0px;
+        height: 0px;
+        border-left: 0px solid transparent;
+        border-top: 0px solid #706262;
+        position: absolute;
+        top: 0;
+        right: 0;
+        opacity: 0.46;
+    }
+
+    100% {
+        width: 0px;
+        height: 0px;
+        border-left: 300px solid transparent;
+        border-top: 300px solid #706262;
+        position: absolute;
+        top: 0;
+        right: 0;
+        opacity: 0.46;
+    }
+}
+
+@keyframes boatCrash {
+    0% {
+        transform: translateX(100%);
+    }
+
+    80% {
+        transform: translateX(-40px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes heroFloat {
+    0% {
+        opacity: 0;
+        transform: translateY(30px) scale(0.94);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+
+    75% {
+        transform: translateY(-6px) scale(1.01);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes scrollFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 43-Point Synchronized Flight Path */
+@keyframes drawLine {
+    0% {
+        clip-path: inset(0 100.00% 0 0);
+    }
+
+    3% {
+        clip-path: inset(0 97.03% 0 0);
+    }
+
+    5% {
+        clip-path: inset(0 93.83% 0 0);
+    }
+
+    8% {
+        clip-path: inset(0 90.55% 0 0);
+    }
+
+    10% {
+        clip-path: inset(0 87.20% 0 0);
+    }
+
+    13% {
+        clip-path: inset(0 83.76% 0 0);
+    }
+
+    15% {
+        clip-path: inset(0 80.33% 0 0);
+    }
+
+    18% {
+        clip-path: inset(0 76.89% 0 0);
+    }
+
+    20% {
+        clip-path: inset(0 73.54% 0 0);
+    }
+
+    23% {
+        clip-path: inset(0 70.26% 0 0);
+    }
+
+    25% {
+        clip-path: inset(0 67.14% 0 0);
+    }
+
+    28% {
+        clip-path: inset(0 64.32% 0 0);
+    }
+
+    30% {
+        clip-path: inset(0 61.67% 0 0);
+    }
+
+    33% {
+        clip-path: inset(0 59.09% 0 0);
+    }
+
+    35% {
+        clip-path: inset(0 56.60% 0 0);
+    }
+
+    38% {
+        clip-path: inset(0 54.25% 0 0);
+    }
+
+    40% {
+        clip-path: inset(0 51.91% 0 0);
+    }
+
+    43% {
+        clip-path: inset(0 49.73% 0 0);
+    }
+
+    45% {
+        clip-path: inset(0 47.54% 0 0);
+    }
+
+    48% {
+        clip-path: inset(0 45.51% 0 0);
+    }
+
+    50% {
+        clip-path: inset(0 43.48% 0 0);
+    }
+
+    53% {
+        clip-path: inset(0 41.61% 0 0);
+    }
+
+    55% {
+        clip-path: inset(0 39.66% 0 0);
+    }
+
+    57% {
+        clip-path: inset(0 37.86% 0 0);
+    }
+
+    60% {
+        clip-path: inset(0 36.22% 0 0);
+    }
+
+    63% {
+        clip-path: inset(0 33.65% 0 0);
+    }
+
+    65% {
+        clip-path: inset(0 30.21% 0 0);
+    }
+
+    68% {
+        clip-path: inset(0 27.09% 0 0);
+    }
+
+    70% {
+        clip-path: inset(0 24.51% 0 0);
+    }
+
+    73% {
+        clip-path: inset(0 22.09% 0 0);
+    }
+
+    75% {
+        clip-path: inset(0 20.06% 0 0);
+    }
+
+    78% {
+        clip-path: inset(0 17.80% 0 0);
+    }
+
+    80% {
+        clip-path: inset(0 14.83% 0 0);
+    }
+
+    83% {
+        clip-path: inset(0 11.48% 0 0);
+    }
+
+    85% {
+        clip-path: inset(0 8.82% 0 0);
+    }
+
+    88% {
+        clip-path: inset(0 6.95% 0 0);
+    }
+
+    90% {
+        clip-path: inset(0 5.31% 0 0);
+    }
+
+    93% {
+        clip-path: inset(0 3.83% 0 0);
+    }
+
+    95% {
+        clip-path: inset(0 2.42% 0 0);
+    }
+
+    98% {
+        clip-path: inset(0 1.17% 0 0);
+    }
+
+    100% {
+        clip-path: inset(0 0.00% 0 0);
+    }
+}
+
+@keyframes planeFly {
+    0% {
+        left: 0.00%;
+        top: 89.28%;
+        transform: translate(-50%, -50%) rotate(104.1deg);
+        opacity: 0;
+    }
+
+    3% {
+        left: 2.97%;
+        top: 92.50%;
+        transform: translate(-50%, -50%) rotate(101.6deg);
+        opacity: 1;
+    }
+
+    5% {
+        left: 6.17%;
+        top: 95.18%;
+        transform: translate(-50%, -50%) rotate(99.0deg);
+    }
+
+    8% {
+        left: 9.45%;
+        top: 97.26%;
+        transform: translate(-50%, -50%) rotate(94.1deg);
+    }
+
+    10% {
+        left: 12.80%;
+        top: 98.70%;
+        transform: translate(-50%, -50%) rotate(88.4deg);
+    }
+
+    13% {
+        left: 16.24%;
+        top: 99.57%;
+        transform: translate(-50%, -50%) rotate(82.5deg);
+    }
+
+    15% {
+        left: 19.67%;
+        top: 99.77%;
+        transform: translate(-50%, -50%) rotate(76.3deg);
+    }
+
+    18% {
+        left: 23.11%;
+        top: 99.13%;
+        transform: translate(-50%, -50%) rotate(69.7deg);
+    }
+
+    20% {
+        left: 26.46%;
+        top: 97.78%;
+        transform: translate(-50%, -50%) rotate(62.7deg);
+    }
+
+    23% {
+        left: 29.74%;
+        top: 95.43%;
+        transform: translate(-50%, -50%) rotate(55.8deg);
+    }
+
+    25% {
+        left: 32.86%;
+        top: 92.42%;
+        transform: translate(-50%, -50%) rotate(49.4deg);
+    }
+
+    28% {
+        left: 35.68%;
+        top: 88.65%;
+        transform: translate(-50%, -50%) rotate(43.9deg);
+    }
+
+    30% {
+        left: 38.33%;
+        top: 84.38%;
+        transform: translate(-50%, -50%) rotate(39.5deg);
+    }
+
+    33% {
+        left: 40.91%;
+        top: 79.86%;
+        transform: translate(-50%, -50%) rotate(36.1deg);
+    }
+
+    35% {
+        left: 43.40%;
+        top: 75.11%;
+        transform: translate(-50%, -50%) rotate(33.6deg);
+    }
+
+    38% {
+        left: 45.75%;
+        top: 70.21%;
+        transform: translate(-50%, -50%) rotate(31.5deg);
+    }
+
+    40% {
+        left: 48.09%;
+        top: 65.08%;
+        transform: translate(-50%, -50%) rotate(29.5deg);
+    }
+
+    43% {
+        left: 50.27%;
+        top: 59.95%;
+        transform: translate(-50%, -50%) rotate(27.8deg);
+    }
+
+    45% {
+        left: 52.46%;
+        top: 54.58%;
+        transform: translate(-50%, -50%) rotate(26.2deg);
+    }
+
+    48% {
+        left: 54.49%;
+        top: 49.08%;
+        transform: translate(-50%, -50%) rotate(24.8deg);
+    }
+
+    50% {
+        left: 56.52%;
+        top: 43.57%;
+        transform: translate(-50%, -50%) rotate(23.4deg);
+    }
+
+    53% {
+        left: 58.39%;
+        top: 38.15%;
+        transform: translate(-50%, -50%) rotate(22.3deg);
+    }
+
+    55% {
+        left: 60.34%;
+        top: 32.24%;
+        transform: translate(-50%, -50%) rotate(22.6deg);
+    }
+
+    57% {
+        left: 62.14%;
+        top: 26.42%;
+        transform: translate(-50%, -50%) rotate(28.2deg);
+    }
+
+    60% {
+        left: 63.78%;
+        top: 20.67%;
+        transform: translate(-50%, -50%) rotate(41.8deg);
+    }
+
+    63% {
+        left: 66.35%;
+        top: 16.24%;
+        transform: translate(-50%, -50%) rotate(60.2deg);
+    }
+
+    65% {
+        left: 69.79%;
+        top: 15.77%;
+        transform: translate(-50%, -50%) rotate(80.5deg);
+    }
+
+    68% {
+        left: 72.91%;
+        top: 18.61%;
+        transform: translate(-50%, -50%) rotate(101.2deg);
+    }
+
+    70% {
+        left: 75.49%;
+        top: 22.89%;
+        transform: translate(-50%, -50%) rotate(116.8deg);
+    }
+
+    73% {
+        left: 77.91%;
+        top: 27.83%;
+        transform: translate(-50%, -50%) rotate(123.0deg);
+    }
+
+    75% {
+        left: 79.94%;
+        top: 33.38%;
+        transform: translate(-50%, -50%) rotate(119.3deg);
+    }
+
+    78% {
+        left: 82.20%;
+        top: 38.50%;
+        transform: translate(-50%, -50%) rotate(105.5deg);
+    }
+
+    80% {
+        left: 85.17%;
+        top: 41.79%;
+        transform: translate(-50%, -50%) rotate(85.3deg);
+    }
+
+    83% {
+        left: 88.52%;
+        top: 41.42%;
+        transform: translate(-50%, -50%) rotate(63.4deg);
+    }
+
+    85% {
+        left: 91.18%;
+        top: 37.29%;
+        transform: translate(-50%, -50%) rotate(42.1deg);
+    }
+
+    88% {
+        left: 93.05%;
+        top: 31.55%;
+        transform: translate(-50%, -50%) rotate(26.0deg);
+    }
+
+    90% {
+        left: 94.69%;
+        top: 25.65%;
+        transform: translate(-50%, -50%) rotate(17.4deg);
+    }
+
+    93% {
+        left: 96.17%;
+        top: 19.43%;
+        transform: translate(-50%, -50%) rotate(13.6deg);
+    }
+
+    95% {
+        left: 97.58%;
+        top: 13.25%;
+        transform: translate(-50%, -50%) rotate(11.4deg);
+    }
+
+    98% {
+        left: 98.83%;
+        top: 6.94%;
+        transform: translate(-50%, -50%) rotate(10.4deg);
+    }
+
+    100% {
+        left: 99.84%;
+        top: 0.31%;
+        transform: translate(-50%, -50%) rotate(9.6deg);
+    }
+}
+
+
+
+/* ============================================================
+   Trip Place (.main3) - Scroll Positional Fade & Path Reveal
+   Pure CSS without JavaScript using CSS Scroll-Driven Animations
+   ============================================================ */
+
+.main3 h1 {
+    overflow: hidden;
+    animation: scrollFadeIn linear both;
+    animation-timeline: view();
+    animation-range: entry 15% cover 35%;
+}
+
+/* Path line reveals progressively one by one as you scroll */
+.main3 .path {
+    overflow: hidden;
+    animation: drawPathScroll linear both;
+    animation-timeline: view();
+    animation-range: entry 5% cover 85%;
+    will-change: clip-path;
+    pointer-events: none;
+}
+
+/* Part 1 (Left Image, Right Content) */
+.main3 .img1 {
+    overflow: hidden;
+    animation: scrollFadeLeft linear both;
+    animation-timeline: view();
+    animation-range: entry 15% cover 42%;
+    will-change: transform, opacity;
+}
+
+.main3 .part1 .mountain,
+.main3 .part1 h1,
+.main3 .part1 p {
+    overflow: hidden;
+    animation: scrollFadeRight linear both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 45%;
+    will-change: transform, opacity;
+}
+
+/* Part 2 (Right Image, Left Content) */
+.main3 .img2 {
+    overflow: hidden;
+    animation: scrollFadeRight linear both;
+    animation-timeline: view();
+    animation-range: entry 15% cover 42%;
+    will-change: transform, opacity;
+}
+
+.main3 .part2 .mountain,
+.main3 .part2 h1,
+.main3 .part2 p {
+    overflow: hidden;
+    animation: scrollFadeLeft linear both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 45%;
+    will-change: transform, opacity;
+}
+
+/* Part 3 (Left Image, Right Content) */
+.main3 .img3 {
+    overflow: hidden;
+    animation: scrollFadeLeft linear both;
+    animation-timeline: view();
+    animation-range: entry 15% cover 42%;
+    will-change: transform, opacity;
+}
+
+.main3 .part3 .mountain,
+.main3 .part3 h1,
+.main3 .part3 p {
+    overflow: hidden;
+    animation: scrollFadeRight linear both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 45%;
+    will-change: transform, opacity;
+}
+
+/* Keyframes for progressively drawing the path line on scroll */
+@keyframes drawPathScroll {
+    0% {
+        clip-path: inset(0 0 100% 0);
+    }
+
+    100% {
+        clip-path: inset(0 0 0% 0);
+    }
+}
+
+/* Keyframes for sliding and fading into position */
+@keyframes scrollFadeLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-70px) scale(0.96);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0) scale(1);
+    }
+}
+
+@keyframes scrollFadeRight {
+    0% {
+        opacity: 0;
+        transform: translateX(70px) scale(0.96);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0) scale(1);
+    }
+}
+
+/* ============================================================
+   Top 10 Activities (.main4) - Professional Scroll Animations
+   ============================================================ */
+
+.mainc h1 {
+    animation: scrollFadeIn linear both;
+    animation-timeline: view();
+    animation-range: entry 10% entry 35%;
+}
+
+.activity-card:nth-child(1) {
+    animation: cardRise linear both;
+    animation-timeline: view();
+    animation-range: entry 10% entry 48%;
+    will-change: transform, opacity;
+}
+
+.activity-card:nth-child(2) {
+    animation: cardRise linear both;
+    animation-timeline: view();
+    animation-range: entry 15% entry 53%;
+    will-change: transform, opacity;
+}
+
+.activity-card:nth-child(3) {
+    animation: cardRise linear both;
+    animation-timeline: view();
+    animation-range: entry 20% entry 58%;
+    will-change: transform, opacity;
+}
+
+.activity-card:nth-child(1) .card-num {
+    animation: numPop linear both;
+    animation-timeline: view();
+    animation-range: entry 12% entry 50%;
+    will-change: transform, opacity;
+}
+
+.activity-card:nth-child(2) .card-num {
+    animation: numPop linear both;
+    animation-timeline: view();
+    animation-range: entry 17% entry 55%;
+    will-change: transform, opacity;
+}
+
+.activity-card:nth-child(3) .card-num {
+    animation: numPop linear both;
+    animation-timeline: view();
+    animation-range: entry 22% entry 60%;
+    will-change: transform, opacity;
+}
+
+.mainc .booking {
+    animation: scrollFadeIn linear both;
+    animation-timeline: view();
+    animation-range: entry 12% entry 48%;
+}
+
+@keyframes cardRise {
+    0% {
+        opacity: 0;
+        transform: translateY(50px) scale(0.95);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes numPop {
+    0% {
+        opacity: 0;
+        transform: translateX(-35px) scale(0.85);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0) scale(1);
+    }
+}
