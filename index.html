@@ -32,14 +32,26 @@
         <header class="navi" id="navi">
             <img src="./Asserts/imgs/navi.png" alt="" class="nimg">
             <div class="hr"></div>
-            <div class="navi-con">
-                <h3>Home</h3>
-                <h3>Destinations</h3>
-                <h3>Packages</h3>
-                <h3>Activities</h3>
-                <h3>travel Guide</h3>
-                <h3>Contact</h3>
-            </div>
+            <nav class="navi-con">
+                <a href="#home">
+                    <h3>Home</h3>
+                </a>
+                <a href="#destination">
+                    <h3>Destinations</h3>
+                </a>
+                <a href="#packages">
+                    <h3>Packages</h3>
+                </a>
+                <a href="#activities">
+                    <h3>Activities</h3>
+                </a>
+                <a href="#travel-guide">
+                    <h3>travel Guide</h3>
+                </a>
+                <a href="#contact">
+                    <h3>Contact</h3>
+                </a>
+            </nav>
         </header>
         <content>
             <img src="./Asserts/imgs/hero-img.png" alt="" class="hero">
@@ -166,7 +178,7 @@
             </div>
         </div>
     </div>
-    <div class="main2">
+    <div class="main2" id="packages">
         <div id="packageCarousel" class="carousel slide carousel-fade" data-interval="false">
             <a class="carousel-control-prev" href="#packageCarousel" role="button" data-slide="prev">
                 <div class="left"></div>
@@ -212,7 +224,7 @@
             </div>
         </div>
     </div>
-    <div class="main3">
+    <div class="main3" id="travel-guide">
         <h1>Trip Place</h1>
         <img src="./Asserts/imgs/path.png" alt="" class="path">
         <div class="part1">
@@ -239,7 +251,7 @@
                 plantations established in the late 19th century</p>
         </div>
     </div>
-    <div class="main4">
+    <div class="main4" id="activities">
         <div class="mainc">
             <img class="bg" src="./Asserts/imgs/main4 bg.png" alt="">
             <h1>Top 10 Activities</h1>
@@ -276,14 +288,14 @@
             </button>
         </div>
     </div>
-    <div class="main5">
+    <div class="main5" id="services">
         <div class="title">
             <h1 class="heading">Explore <b>Our Services</b></h1>
             <p class="para">From serene beaches to majestic mountains, we bring you closer to the world’s most iconic
                 and hidden gems. Start your travel story today with tailored experiences, trusted guides, and seamless
                 bookings.</p>
         </div>
-        <div id="servicesCarousel" class="carousel slide carousel-fade" data-interval="false">
+        <div id="servicesCarousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="1500">
             <div class="carousel-inner">
                 <!-- Slide 1: Falls (a3 active) -->
                 <div class="carousel-item active">
@@ -389,8 +401,8 @@
     </div>
 
 
-    <!-- Why Trust Us Section -->
-    <div class="main6">
+    <!-- Why Trust Us Section, Testimonials & Footer -->
+    <div class="main6" id="why-trust-us">
         <div class="why-trust-content">
 
             <div class="stat-row">
@@ -421,6 +433,189 @@
                 </div>
             </div>
         </div>
+
+        <!-- Testimonial Section with Infinite Marquee -->
+        <div class="testimonial-section">
+            <h1 class="testimonial-title">Testimonial</h1>
+            <div class="testimonial-ribbon-wrapper">
+                <div class="testimonial-ribbon">
+                    <div class="marquee-track">
+                        <!-- Group 1 -->
+                        <div class="marquee-group">
+                            <div class="testimonial-card">
+                                <div class="avatar-wrap">
+                                    <img src="./Asserts/imgs/profile.png" alt="Vijay" class="avatar-img">
+                                </div>
+                                <h4 class="card-author">Vijay</h4>
+                                <p class="card-quote">"booking through this site was the best decision. everything from
+                                    hotels to local tours was perfectly organized. kerala felt like a dream!"</p>
+                                <div class="card-stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+
+                            <div class="testimonial-card">
+                                <div class="avatar-wrap">
+                                    <img src="./Asserts/imgs/profile.png" alt="Ajith" class="avatar-img">
+                                </div>
+                                <h4 class="card-author">Ajith</h4>
+                                <p class="card-quote">"booking through this site was the best decision. everything from
+                                    hotels to local tours was perfectly organized. kerala felt like a dream!"</p>
+                                <div class="card-stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+
+                            <div class="testimonial-card">
+                                <div class="avatar-wrap">
+                                    <img src="./Asserts/imgs/profile.png" alt="Suriya" class="avatar-img">
+                                </div>
+                                <h4 class="card-author">Suriya</h4>
+                                <p class="card-quote">"booking through this site was the best decision. everything from
+                                    hotels to local tours was perfectly organized. kerala felt like a dream!"</p>
+                                <div class="card-stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+
+                            <div class="testimonial-card">
+                                <div class="avatar-wrap">
+                                    <img src="./Asserts/imgs/profile.png" alt="Vikram" class="avatar-img">
+                                </div>
+                                <h4 class="card-author">Vikram</h4>
+                                <p class="card-quote">"booking through this site was the best decision. everything from
+                                    hotels to local tours was perfectly organized. kerala felt like a dream!"</p>
+                                <div class="card-stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Group 2 (Duplicate for Seamless Infinite Marquee Loop) -->
+                        <div class="marquee-group" aria-hidden="true">
+                            <div class="testimonial-card">
+                                <div class="avatar-wrap">
+                                    <img src="./Asserts/imgs/profile.png" alt="Vijay" class="avatar-img">
+                                </div>
+                                <h4 class="card-author">Vijay</h4>
+                                <p class="card-quote">"booking through this site was the best decision. everything from
+                                    hotels to local tours was perfectly organized. kerala felt like a dream!"</p>
+                                <div class="card-stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+
+                            <div class="testimonial-card">
+                                <div class="avatar-wrap">
+                                    <img src="./Asserts/imgs/profile.png" alt="Ajith" class="avatar-img">
+                                </div>
+                                <h4 class="card-author">Ajith</h4>
+                                <p class="card-quote">"booking through this site was the best decision. everything from
+                                    hotels to local tours was perfectly organized. kerala felt like a dream!"</p>
+                                <div class="card-stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+
+                            <div class="testimonial-card">
+                                <div class="avatar-wrap">
+                                    <img src="./Asserts/imgs/profile.png" alt="Suriya" class="avatar-img">
+                                </div>
+                                <h4 class="card-author">Suriya</h4>
+                                <p class="card-quote">"booking through this site was the best decision. everything from
+                                    hotels to local tours was perfectly organized. kerala felt like a dream!"</p>
+                                <div class="card-stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+
+                            <div class="testimonial-card">
+                                <div class="avatar-wrap">
+                                    <img src="./Asserts/imgs/profile.png" alt="Vikram" class="avatar-img">
+                                </div>
+                                <h4 class="card-author">Vikram</h4>
+                                <p class="card-quote">"booking through this site was the best decision. everything from
+                                    hotels to local tours was perfectly organized. kerala felt like a dream!"</p>
+                                <div class="card-stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Houseboat Footer Section -->
+        <footer class="footer-section" id="contact">
+            <div class="footer-overlay"></div>
+            <img src="./Asserts/imgs/footer.png" alt="Kerala Backwaters Houseboat" class="footer-bg-img">
+            <div class="footer-container">
+                <div class="footer-brand">
+                    <h2 class="footer-logo">Tourist</h2>
+                    <p class="footer-desc">Booking through this site was the best decision. Everything from hotels to
+                        local tours were perfectly organized. Kerala felt like a dream.</p>
+                </div>
+                <div class="footer-links-grid">
+                    <div class="footer-col">
+                        <h3 class="footer-col-title">Navigation</h3>
+                        <ul class="footer-nav-list">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#packages">Packages</a></li>
+                            <li><a href="#destination">Destinations</a></li>
+                            <li><a href="#activities">Activities</a></li>
+                            <li><a href="#travel-guide">Travel Guide</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h3 class="footer-col-title">Quick Link</h3>
+                        <ul class="footer-nav-list">
+                            <li><a href="#destination">Gallery</a></li>
+                            <li><a href="#activities">Activities</a></li>
+                            <li><a href="#packages">Packages</a></li>
+                            <li><a href="#activities">Activities</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h3 class="footer-col-title">Address</h3>
+                        <p class="footer-address">77 pilliyar kovil streer</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>

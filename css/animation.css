@@ -695,7 +695,6 @@ content p {
    ============================================================ */
 
 .main3 h1 {
-    overflow: hidden;
     animation: scrollFadeIn linear both;
     animation-timeline: view();
     animation-range: entry 15% cover 35%;
@@ -703,7 +702,6 @@ content p {
 
 /* Path line reveals progressively one by one as you scroll */
 .main3 .path {
-    overflow: hidden;
     animation: drawPathScroll linear both;
     animation-timeline: view();
     animation-range: entry 5% cover 85%;
@@ -713,7 +711,6 @@ content p {
 
 /* Part 1 (Left Image, Right Content) */
 .main3 .img1 {
-    overflow: hidden;
     animation: scrollFadeLeft linear both;
     animation-timeline: view();
     animation-range: entry 15% cover 42%;
@@ -723,7 +720,6 @@ content p {
 .main3 .part1 .mountain,
 .main3 .part1 h1,
 .main3 .part1 p {
-    overflow: hidden;
     animation: scrollFadeRight linear both;
     animation-timeline: view();
     animation-range: entry 20% cover 45%;
@@ -732,7 +728,6 @@ content p {
 
 /* Part 2 (Right Image, Left Content) */
 .main3 .img2 {
-    overflow: hidden;
     animation: scrollFadeRight linear both;
     animation-timeline: view();
     animation-range: entry 15% cover 42%;
@@ -742,7 +737,6 @@ content p {
 .main3 .part2 .mountain,
 .main3 .part2 h1,
 .main3 .part2 p {
-    overflow: hidden;
     animation: scrollFadeLeft linear both;
     animation-timeline: view();
     animation-range: entry 20% cover 45%;
@@ -751,7 +745,6 @@ content p {
 
 /* Part 3 (Left Image, Right Content) */
 .main3 .img3 {
-    overflow: hidden;
     animation: scrollFadeLeft linear both;
     animation-timeline: view();
     animation-range: entry 15% cover 42%;
@@ -761,7 +754,6 @@ content p {
 .main3 .part3 .mountain,
 .main3 .part3 h1,
 .main3 .part3 p {
-    overflow: hidden;
     animation: scrollFadeRight linear both;
     animation-timeline: view();
     animation-range: entry 20% cover 45%;
@@ -883,5 +875,14 @@ content p {
     100% {
         opacity: 1;
         transform: translateX(0) scale(1);
+    }
+}
+
+@keyframes marqueeSlide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
     }
 }
