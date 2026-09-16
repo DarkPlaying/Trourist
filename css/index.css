@@ -1469,6 +1469,10 @@ content p {
 
 @media (max-width: 1520.02px) {
 
+    body {
+        overflow: hidden;
+    }
+
     .block {
         display: flex;
         flex-direction: column;
