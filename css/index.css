@@ -1,5 +1,5 @@
 html {
-    scroll-behavior: smooth;
+    /* scroll-behavior: smooth is replaced by JS to correctly handle position:sticky sections */
 }
 
 html,
@@ -20,7 +20,7 @@ body {
 
 .layer {
     background-color: white;
-    opacity: 0.46;
+    opacity: 0.74;
     height: 100vh;
     width: 100%;
     z-index: 0;
@@ -301,7 +301,7 @@ content p {
     overflow: hidden;
 }
 
-/* layer 3 */
+/* Layer 3 */
 .main2 {
     background-color: white;
     height: 100vh;
@@ -309,6 +309,8 @@ content p {
     position: sticky;
     top: 0;
     z-index: 3;
+    overflow-x: clip;
+    margin-bottom: 1000px;
 }
 
 .carousel {
@@ -485,6 +487,7 @@ content p {
     opacity: 0.8;
 }
 
+/* Layer 4 */
 .main3 {
     background: white;
     z-index: 5;
@@ -613,8 +616,9 @@ content p {
     width: 600px;
 }
 
+/* Layer 5 */
 .main4 {
-    min-height: 92vh;
+    min-height: 100vh;
     height: auto;
     width: 98%;
     background-color: white;
@@ -632,11 +636,12 @@ content p {
 .mainc {
     position: relative;
     width: 100%;
-    max-width: 1550px;
+    max-width: 1750px;
     height: 820px;
     border-radius: 12px;
     border: 2px dashed rgba(255, 255, 255, 0.5);
     overflow: hidden;
+    margin-bottom: 1000px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
@@ -680,6 +685,7 @@ content p {
     position: relative;
     width: 308px;
     height: 441px;
+
     border-radius: 6px;
     box-shadow: 0 12px 28px rgba(0, 0, 0, 0.5);
     cursor: pointer;
@@ -770,7 +776,7 @@ content p {
     outline: none;
     padding: 0;
     cursor: pointer;
-    z-index: 6;
+    z-index: 10;
     transition: transform 1s;
 }
 
@@ -781,11 +787,13 @@ content p {
     width: 100%;
     height: 100%;
     object-fit: contain;
+    z-index: 10;
     transition: opacity 0.5s ease;
 }
 
 .booking .btn-default {
     opacity: 1;
+    z-index: 10;
 }
 
 .booking .btn-hover {
@@ -804,16 +812,15 @@ content p {
     transform: translateY(-3px) scale(1.04);
 }
 
-/* layer5 */
-
+/* Layer 6 */
 .main5 {
-    min-height: 1700px;
+    min-height: 1560px;
     height: auto;
     background-color: white;
     position: relative;
     z-index: 10;
     overflow: hidden;
-    padding-bottom: 60px;
+    padding-bottom: 0px;
 }
 
 .main5 .layer {
@@ -902,7 +909,6 @@ content p {
     padding: 10px 0;
 }
 
-/* Side capsules */
 .service-side-capsule {
     width: 246px;
     height: 360px;
@@ -914,14 +920,12 @@ content p {
     transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.4s ease, filter 0.3s ease;
 }
 
-/* Side capsules hover: scale big only */
 .service-side-capsule:hover {
     transform: scale(1.06);
     filter: brightness(1.06);
     box-shadow: 0 16px 36px rgba(0, 0, 0, 0.28);
 }
 
-/* Center active card */
 .service-center-card {
     position: relative;
     width: 300px;
@@ -942,7 +946,6 @@ content p {
     transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1), filter 0.3s ease;
 }
 
-/* Center card arrow button */
 .service-center-card .service-arrow-btn {
     position: absolute;
     left: 50%;
@@ -968,7 +971,6 @@ content p {
     transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
-/* Center card title badge */
 .service-center-card .service-card-title {
     position: absolute;
     left: 50%;
@@ -988,7 +990,6 @@ content p {
     transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
-/* Hover: active image and arrow both scale up together */
 .service-center-card:hover .service-center-img {
     transform: scale(1.05);
     filter: brightness(1.06);
@@ -1008,7 +1009,6 @@ content p {
     transform: translateX(-50%) translateY(-2px);
 }
 
-/* Bottom carousel navigation arrows centered under the center card */
 .services-nav-controls {
     display: flex;
     gap: 80px;
@@ -1017,7 +1017,8 @@ content p {
     align-items: center;
     justify-content: center;
     margin-top: 150px;
-    left: 43%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .services-nav-controls .services-nav-btn {
@@ -1055,90 +1056,82 @@ content p {
 .main5 .head {
     position: absolute;
     z-index: 20;
-    top: 1550px;
-    left: 50%;
-    transform: translateX(-50%);
+    top: 1475px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin: 0 auto;
     font-family: 'Poppins', sans-serif;
-    font-size: 38px;
-    font-weight: 500;
+    font-size: 48px;
+    font-weight: 700;
     text-align: center;
     color: #111827;
+    letter-spacing: 0.5px;
 }
 
-/* ============================================================
-   Why Trust Us Section (.main6) - Matching Figma Screenshot 2
-   ============================================================ */
-
+/* Layer 7 */
 .main6 {
     position: relative;
     background-color: white;
     z-index: 12;
-    margin-top: -10px;
-    padding: 70px 0 0 0;
+    margin-top: 0;
+    padding: 60px 0 0 0;
     width: 100%;
-    overflow: hidden;
+    overflow-x: clip;
 }
 
 .why-trust-content {
     position: relative;
-    max-width: 900px;
-    height: 780px;
-    margin: 0 auto 40px auto;
+    max-width: 720px;
+    margin: 0 auto;
     padding: 0 20px;
-}
-
-.main6 .head {
-    font-family: 'Poppins', sans-serif;
-    font-size: 38px;
-    font-weight: 700;
-    text-align: center;
-    color: #111827;
-    margin: 0 0 45px 0;
-}
-
-.stat-row {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-    margin-bottom: 55px;
-}
-
-.stat-left {
-    display: flex;
+    flex-direction: column;
     align-items: flex-start;
+    box-sizing: border-box;
 }
 
-.stat-left .img-99 {
-    position: absolute;
-    left: 100px;
-    height: 370px;
-    width: 520px;
+.stat-block {
+    width: 100%;
+    margin-bottom: 75px;
+}
+
+.stat-graphic {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 28px;
+}
+
+.stat-graphic .img-99 {
+    position: relative;
+    top: 70px;
+    padding-bottom: 70px;
+    width: 490px;
+    height: auto;
     object-fit: contain;
+    display: block;
 }
 
-.stat-left .img-per {
-    height: 70px;
-    width: auto;
+.stat-graphic .img-per {
+    width: 90px;
+    height: auto;
     object-fit: contain;
-    margin-left: 420px;
-    margin-top: 200px;
-}
-
-.stat-right {
-    width: 460px;
-    position: absolute;
-    top: 290px;
-    left: 45.5%;
+    margin-left: 14px;
+    margin-bottom: 64px;
+    display: block;
 }
 
 .stat-desc {
     font-family: 'Poppins', sans-serif;
-    font-size: 15px;
+    font-size: 14px;
     color: #374151;
     line-height: 1.6;
+    top: 320px;
+    left: 60px;
+    position: absolute;
     margin: 0;
+    margin-left: 230px;
+    max-width: 440px;
 }
 
 .stat-desc .highlight {
@@ -1147,40 +1140,52 @@ content p {
 }
 
 .trust-list {
-    position: absolute;
+    position: relative;
     display: flex;
     flex-direction: column;
-    gap: 30px;
-    max-width: 650px;
-    margin-left: 20px;
-    padding-left: 20px;
-    padding-top: 130px;
-    margin-bottom: 40px;
+    gap: 52px;
+    width: 100%;
+}
+
+.trust-item {
+    transition: transform 0.25s ease;
+}
+
+.trust-item:hover {
+    transform: translateX(6px);
 }
 
 .trust-item h2 {
     font-family: 'Poppins', sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 800;
     color: #111827;
     letter-spacing: 0.5px;
-    margin: 0 0 6px 0;
+    margin: 0 0 14px 0;
+    text-transform: uppercase;
+    transition: color 0.25s ease;
+}
+
+.trust-item:hover h2 {
+    color: #0284c7;
 }
 
 .trust-item p {
     font-family: 'Poppins', sans-serif;
-    font-size: 20px;
+    font-size: 15px;
     color: #4b5563;
-    line-height: 1.55;
-    width: 700px;
-    margin-left: 80px;
+    line-height: 1.65;
+    margin: 0;
+    margin-left: 110px;
+    max-width: 550px;
 }
 
+/* Layer 8 */
 .testimonial-section {
     position: relative;
     width: 100%;
-    margin-top: 150px;
-    padding: 30px 0 70px 0;
+    margin-top: 100px;
+    padding: 30px 0 60px 0;
     background-color: #ffffff;
     z-index: 2;
 }
@@ -1329,13 +1334,18 @@ content p {
     }
 }
 
+/* Footer */
 .footer-section {
     position: relative;
     width: 100%;
     min-height: 500px;
-    overflow: hidden;
+    overflow: clip;
     display: flex;
     align-items: center;
+    z-index: 10;
+    background-color: #0b1a1a;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 .footer-bg-img {
@@ -1347,7 +1357,7 @@ content p {
     opacity: 0.5;
     object-fit: cover;
     object-position: center bottom;
-    z-index: 0;
+    z-index: -1;
 }
 
 .footer-overlay {

@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="./css/bs.css">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/animation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -70,9 +72,9 @@
         </content>
     </div>
     <div id="destination">
-        <h1>Destinations</h1>
+        <h1 data-aos="fade-down">Destinations</h1>
         <div class="List">
-            <div class="card">
+            <div class="card" data-aos="flip-left" data-aos-duration="2000" data-aos-delay="2000">
                 <div class="overlay">
                     <div class="toptri"></div>
                     <div class="bottomtri"></div>
@@ -90,7 +92,7 @@
                 </div>
             </div>
 
-            <div class="card">
+            <div class="card" data-aos="flip-left" data-aos-delay="200">
                 <img src="./Asserts/imgs/image2.png" alt="">
                 <div class="overlay">
                     <div class="toptri"></div>
@@ -107,7 +109,7 @@
                 </div>
             </div>
 
-            <div class="card">
+            <div class="card" data-aos="flip-left" data-aos-delay="300">
                 <img src="./Asserts/imgs/image3.png" alt="">
                 <div class="overlay">
                     <div class="toptri"></div>
@@ -123,7 +125,7 @@
                 </div>
             </div>
 
-            <div class="card">
+            <div class="card" data-aos="flip-left" data-aos-delay="150">
                 <img src="./Asserts/imgs/image4.png" alt="">
                 <div class="overlay">
                     <div class="toptri"></div>
@@ -141,7 +143,7 @@
                 </div>
             </div>
 
-            <div class="card">
+            <div class="card" data-aos="flip-left" data-aos-delay="250">
                 <img src="./Asserts/imgs/image5.png" alt="">
                 <div class="overlay">
                     <div class="toptri"></div>
@@ -159,7 +161,7 @@
                 </div>
             </div>
 
-            <div class="card">
+            <div class="card" data-aos="flip-left" data-aos-delay="350">
                 <img src="./Asserts/imgs/image6.png" alt="">
                 <div class="overlay">
                     <div class="toptri"></div>
@@ -180,26 +182,28 @@
     </div>
     <div class="main2" id="packages">
         <div id="packageCarousel" class="carousel slide carousel-fade" data-interval="false">
-            <a class="carousel-control-prev" href="#packageCarousel" role="button" data-slide="prev">
+            <a class="carousel-control-prev" href="#packageCarousel" role="button" data-slide="prev"
+                data-aos="fade-right" data-aos-delay="200">
                 <div class="left"></div>
                 <i class="fa-solid fa-arrow-left"></i>
             </a>
-            <a class="carousel-control-next" href="#packageCarousel" role="button" data-slide="next">
+            <a class="carousel-control-next" href="#packageCarousel" role="button" data-slide="next"
+                data-aos="fade-left" data-aos-delay="200">
                 <div class="right"></div>
                 <i class="fa-solid fa-arrow-right"></i>
             </a>
 
-            <div class="head">
+            <div class="head" data-aos="fade-down" data-aos-delay="100">
                 <h1>Packages</h1>
                 <h2 class="kerala">kerala</h2>
             </div>
-            <img class="c1" src="./Asserts/imgs/corner.png" alt="">
-            <img class="c2" src="./Asserts/imgs/corner2.png" alt="">
-            <img class="bgcolor" src="./Asserts/imgs/cbg.png" alt="">
+            <img class="c1" src="./Asserts/imgs/corner.png" alt="" data-aos="fade-right" data-aos-delay="150">
+            <img class="c2" src="./Asserts/imgs/corner2.png" alt="" data-aos="fade-left" data-aos-delay="150">
+            <img class="bgcolor" src="./Asserts/imgs/cbg.png" alt="" data-aos="zoom-in" data-aos-delay="50">
 
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <div class="imgs">
+                    <div class="imgs" data-aos="fade-up" data-aos-delay="200">
                         <img class="active-img" src="./Asserts/imgs/c1.png" alt="Wonderla Kochi">
                         <img class="side-img" src="./Asserts/imgs/c2.png" alt="Munnar Hills">
                         <img class="side-img" src="./Asserts/imgs/c3.png" alt="Glass Bridge">
@@ -254,50 +258,54 @@
     <div class="main4" id="activities">
         <div class="mainc">
             <img class="bg" src="./Asserts/imgs/main4 bg.png" alt="">
-            <h1>Top 10 Activities</h1>
+            <h1 data-aos="fade-right" data-aos-duration="700" data-aos-delay="100">Top 10 Activities</h1>
 
             <div class="activities-container">
-                <div class="activity-card">
+                <div class="activity-card" data-aos="fade-up" data-aos-delay="200" data-aos-duration="750">
                     <div class="img-box">
                         <img class="card-img" src="./Asserts/imgs/g1.png" alt="Boating">
                     </div>
-                    <img class="card-num" src="./Asserts/imgs/1.png" alt="1">
+                    <img class="card-num" src="./Asserts/imgs/1.png" alt="1" data-aos="fade-right" data-aos-delay="350"
+                        data-aos-duration="600">
                     <div class="card-label">BOATING</div>
                 </div>
 
-                <div class="activity-card">
+                <div class="activity-card" data-aos="fade-up" data-aos-delay="350" data-aos-duration="750">
                     <div class="img-box">
                         <img class="card-img" src="./Asserts/imgs/g2.png" alt="Parachute Activities">
                     </div>
-                    <img class="card-num" src="./Asserts/imgs/2.png" alt="2">
+                    <img class="card-num" src="./Asserts/imgs/2.png" alt="2" data-aos="fade-right" data-aos-delay="500"
+                        data-aos-duration="600">
                     <div class="card-label">PARACHUTE<br>ACTIVITIES</div>
                 </div>
 
-                <div class="activity-card">
+                <div class="activity-card" data-aos="fade-up" data-aos-delay="500" data-aos-duration="750">
                     <div class="img-box">
                         <img class="card-img" src="./Asserts/imgs/g3.png" alt="Traditional Festival of Kerala">
                     </div>
-                    <img class="card-num" src="./Asserts/imgs/3.png" alt="3">
+                    <img class="card-num" src="./Asserts/imgs/3.png" alt="3" data-aos="fade-right" data-aos-delay="650"
+                        data-aos-duration="600">
                     <div class="card-label">TRADITIONAL<br>FESTIVAL OF KERALA</div>
                 </div>
             </div>
 
-            <button class="booking" aria-label="Booking">
+            <button class="booking" aria-label="Booking" data-aos="fade-up" data-aos-delay="200"
+                data-aos-duration="200">
                 <img src="./Asserts/imgs/button1.png" alt="Booking" class="btn-img btn-default">
                 <img src="./Asserts/imgs/button2.png" alt="Booking" class="btn-img btn-hover">
             </button>
         </div>
     </div>
     <div class="main5" id="services">
-        <div class="title">
+        <div class="title" data-aos="fade-up">
             <h1 class="heading">Explore <b>Our Services</b></h1>
             <p class="para">From serene beaches to majestic mountains, we bring you closer to the world’s most iconic
                 and hidden gems. Start your travel story today with tailored experiences, trusted guides, and seamless
                 bookings.</p>
         </div>
-        <div id="servicesCarousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="1500">
+        <div id="servicesCarousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="1500"
+            data-aos="fade-up" data-aos-delay="100">
             <div class="carousel-inner">
-                <!-- Slide 1: Falls (a3 active) -->
                 <div class="carousel-item active">
                     <div class="service-slide-row">
                         <img src="./Asserts/imgs/a1.png" alt="Munnar Town" class="service-side-capsule">
@@ -314,7 +322,6 @@
                     </div>
                 </div>
 
-                <!-- Slide 2: Plantations (a4 active) -->
                 <div class="carousel-item">
                     <div class="service-slide-row">
                         <img src="./Asserts/imgs/a2.png" alt="Alleppey Backwaters" class="service-side-capsule">
@@ -331,7 +338,6 @@
                     </div>
                 </div>
 
-                <!-- Slide 3: Beaches (a5 active) -->
                 <div class="carousel-item">
                     <div class="service-slide-row">
                         <img src="./Asserts/imgs/a3.png" alt="Waterfalls" class="service-side-capsule">
@@ -348,7 +354,6 @@
                     </div>
                 </div>
 
-                <!-- Slide 4: Valleys (a1 active) -->
                 <div class="carousel-item">
                     <div class="service-slide-row">
                         <img src="./Asserts/imgs/a4.png" alt="Tea Plantations" class="service-side-capsule">
@@ -365,7 +370,6 @@
                     </div>
                 </div>
 
-                <!-- Slide 5: Backwaters (a2 active) -->
                 <div class="carousel-item">
                     <div class="service-slide-row">
                         <img src="./Asserts/imgs/a5.png" alt="Coastal Beaches" class="service-side-capsule">
@@ -383,7 +387,6 @@
                 </div>
             </div>
 
-            <!-- Left and Right Arrows centered right below the center capsule matching Figma -->
             <div class="services-nav-controls">
                 <a class="services-nav-btn prev" href="#servicesCarousel" role="button" data-slide="prev"
                     aria-label="Previous">
@@ -397,36 +400,34 @@
         </div>
         <div class="layer"></div>
         <img src="./Asserts/imgs/main5 bg.png" alt="" class="bg">
-        <h1 class="head">Why Trust us</h1>
+        <h1 class="head" data-aos="fade-up">Why Trust us</h1>
     </div>
 
 
-    <!-- Why Trust Us Section, Testimonials & Footer -->
     <div class="main6" id="why-trust-us">
         <div class="why-trust-content">
 
-            <div class="stat-row">
-                <div class="stat-left">
+            <div class="stat-block">
+                <div class="stat-graphic" data-aos="fade-up">
                     <img src="./Asserts/imgs/99.png" alt="99" class="img-99">
                     <img src="./Asserts/imgs/per.png" alt="%" class="img-per">
                 </div>
-                <div class="stat-right">
-                    <p class="stat-desc">No hidden charges, no last-minute surprises. What you see is what you pay. No
-                        hidden charges, no <span class="highlight">last-minute surprises.</span></p>
-                </div>
+                <p class="stat-desc" data-aos="fade-up" data-aos-delay="100">No hidden charges, no last-minute
+                    surprises. What you see is what you pay.No hidden charges, no <span class="highlight">last-minute
+                        surprises.</span></p>
             </div>
 
             <div class="trust-list">
-                <div class="trust-item">
+                <div class="trust-item" data-aos="fade-up" data-aos-delay="100">
                     <h2>CERTIFIED & RELIABLE</h2>
                     <p>we partner only with government-approved tour operators, licensed guides, and verified
                         accommodations.</p>
                 </div>
-                <div class="trust-item">
+                <div class="trust-item" data-aos="fade-up" data-aos-delay="200">
                     <h2>TRANSPARENT PRICING</h2>
                     <p>No hidden charges, no last-minute surprises. what you see is what you pay.</p>
                 </div>
-                <div class="trust-item">
+                <div class="trust-item" data-aos="fade-up" data-aos-delay="300">
                     <h2>SAFE & SECURE</h2>
                     <p>Your safety is our top priority. from secure bookings to verified transportation, we ensure peace
                         of mind throughout your journey.</p>
@@ -434,13 +435,11 @@
             </div>
         </div>
 
-        <!-- Testimonial Section with Infinite Marquee -->
         <div class="testimonial-section">
-            <h1 class="testimonial-title">Testimonial</h1>
-            <div class="testimonial-ribbon-wrapper">
+            <h1 class="testimonial-title" data-aos="fade-down">Testimonial</h1>
+            <div class="testimonial-ribbon-wrapper" data-aos="fade-up" data-aos-delay="100">
                 <div class="testimonial-ribbon">
                     <div class="marquee-track">
-                        <!-- Group 1 -->
                         <div class="marquee-group">
                             <div class="testimonial-card">
                                 <div class="avatar-wrap">
@@ -507,7 +506,6 @@
                             </div>
                         </div>
 
-                        <!-- Group 2 (Duplicate for Seamless Infinite Marquee Loop) -->
                         <div class="marquee-group" aria-hidden="true">
                             <div class="testimonial-card">
                                 <div class="avatar-wrap">
@@ -577,49 +575,81 @@
                 </div>
             </div>
         </div>
+    </div>
 
-        <!-- Houseboat Footer Section -->
-        <footer class="footer-section" id="contact">
-            <div class="footer-overlay"></div>
-            <img src="./Asserts/imgs/footer.png" alt="Kerala Backwaters Houseboat" class="footer-bg-img">
-            <div class="footer-container">
-                <div class="footer-brand">
-                    <h2 class="footer-logo">Tourist</h2>
-                    <p class="footer-desc">Booking through this site was the best decision. Everything from hotels to
-                        local tours were perfectly organized. Kerala felt like a dream.</p>
+    <footer class="footer-section" id="contact">
+        <div class="footer-overlay"></div>
+        <img src="./Asserts/imgs/footer.png" alt="Kerala Backwaters Houseboat" class="footer-bg-img">
+        <div class="footer-container">
+            <div class="footer-brand" data-aos="fade-right">
+                <h2 class="footer-logo">Tourist</h2>
+                <p class="footer-desc">Booking through this site was the best decision. Everything from hotels to
+                    local tours were perfectly organized. Kerala felt like a dream.</p>
+            </div>
+            <div class="footer-links-grid">
+                <div class="footer-col" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="footer-col-title">Navigation</h3>
+                    <ul class="footer-nav-list">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#packages">Packages</a></li>
+                        <li><a href="#destination">Destinations</a></li>
+                        <li><a href="#activities">Activities</a></li>
+                        <li><a href="#travel-guide">Travel Guide</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
                 </div>
-                <div class="footer-links-grid">
-                    <div class="footer-col">
-                        <h3 class="footer-col-title">Navigation</h3>
-                        <ul class="footer-nav-list">
-                            <li><a href="#home">Home</a></li>
-                            <li><a href="#packages">Packages</a></li>
-                            <li><a href="#destination">Destinations</a></li>
-                            <li><a href="#activities">Activities</a></li>
-                            <li><a href="#travel-guide">Travel Guide</a></li>
-                            <li><a href="#contact">Contact</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-col">
-                        <h3 class="footer-col-title">Quick Link</h3>
-                        <ul class="footer-nav-list">
-                            <li><a href="#destination">Gallery</a></li>
-                            <li><a href="#activities">Activities</a></li>
-                            <li><a href="#packages">Packages</a></li>
-                            <li><a href="#activities">Activities</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-col">
-                        <h3 class="footer-col-title">Address</h3>
-                        <p class="footer-address">77 pilliyar kovil streer</p>
-                    </div>
+                <div class="footer-col" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="footer-col-title">Quick Link</h3>
+                    <ul class="footer-nav-list">
+                        <li><a href="#destination">Gallery</a></li>
+                        <li><a href="#activities">Activities</a></li>
+                        <li><a href="#packages">Packages</a></li>
+                        <li><a href="#contact">Contaact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col" data-aos="fade-up" data-aos-delay="300">
+                    <h3 class="footer-col-title">Address</h3>
+                    <p class="footer-address">77 pilliyar kovil streer</p>
                 </div>
             </div>
-        </footer>
+        </div>
+    </footer>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 40,
+            duration: 650,
+            easing: 'ease-out-cubic',
+            once: false
+        });
+
+        // Fix: Smooth scroll for anchor links in a sticky-stacked layout.
+        // Native scroll-behavior: smooth gets confused by position:sticky sections
+        // because their offsetTop doesn't reflect their visual scroll target.
+        // We intercept clicks and use getBoundingClientRect + scrollBy instead.
+        document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
+            anchor.addEventListener('click', function (e) {
+                var targetId = this.getAttribute('href').slice(1);
+                var target = document.getElementById(targetId);
+                if (!target) return;
+                e.preventDefault();
+
+                // getBoundingClientRect gives the element's position relative to viewport.
+                // Adding scrollY converts it to absolute document position.
+                var rect = target.getBoundingClientRect();
+                var absoluteTop = rect.top + window.scrollY;
+
+                window.scrollTo({
+                    top: absoluteTop,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>

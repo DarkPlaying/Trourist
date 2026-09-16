@@ -72,40 +72,30 @@ content p {
 }
 
 
-#destination h1 {
-    animation: scrollFadeIn linear both;
-    animation-timeline: view();
-    animation-range: entry 24% exit 5%;
-}
-
+/* Layer 2 - Destinations */
 #destination .card {
-    animation: scrollFadeIn linear both;
-    animation-timeline: view();
+    transition: transform 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94), box-shadow 0.35s ease;
 }
 
-#destination .card:nth-child(1) {
-    animation-range: entry 24% entry 59%;
+#destination .card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
 }
 
-#destination .card:nth-child(2) {
-    animation-range: entry 32% entry 67%;
+.carousel-control-prev,
+.carousel-control-next {
+    transition: transform 0.25s ease, opacity 0.25s ease;
 }
 
-#destination .card:nth-child(3) {
-    animation-range: entry 40% entry 75%;
+.carousel-control-prev:hover {
+    transform: scale(1.1) translateX(-3px);
 }
 
-#destination .card:nth-child(4) {
-    animation-range: entry 24% entry 59%;
+.carousel-control-next:hover {
+    transform: scale(1.1) translateX(3px);
 }
 
-#destination .card:nth-child(5) {
-    animation-range: entry 32% entry 67%;
-}
-
-#destination .card:nth-child(6) {
-    animation-range: entry 40% entry 75%;
-}
+/* Layer 3 */
 
 .carousel-item.active .active-img {
     animation: carouselActiveFadeIn 0.6s both;
@@ -689,11 +679,7 @@ content p {
 
 
 
-/* ============================================================
-   Trip Place (.main3) - Scroll Positional Fade & Path Reveal
-   Pure CSS without JavaScript using CSS Scroll-Driven Animations
-   ============================================================ */
-
+/* Layer 4 */
 .main3 h1 {
     animation: scrollFadeIn linear both;
     animation-timeline: view();
@@ -796,86 +782,39 @@ content p {
     }
 }
 
-/* ============================================================
-   Top 10 Activities (.main4) - Professional Scroll Animations
-   ============================================================ */
-
-.mainc h1 {
-    animation: scrollFadeIn linear both;
-    animation-timeline: view();
-    animation-range: entry 10% entry 35%;
+/* Layer 5 - Activities Section AOS Enhancements */
+.activity-card {
+    will-change: transform, opacity;
+    transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.4s ease;
 }
 
-.activity-card:nth-child(1) {
-    animation: cardRise linear both;
-    animation-timeline: view();
-    animation-range: entry 10% entry 48%;
-    will-change: transform, opacity;
+.activity-card.aos-animate:hover,
+.activity-card:hover {
+    transform: translateY(-10px) scale(1.02) !important;
+    box-shadow: 0 24px 48px rgba(0, 0, 0, 0.65) !important;
 }
 
-.activity-card:nth-child(2) {
-    animation: cardRise linear both;
-    animation-timeline: view();
-    animation-range: entry 15% entry 53%;
-    will-change: transform, opacity;
+.activity-card.aos-animate:hover .card-img,
+.activity-card:hover .card-img {
+    transform: scale(1.08);
+    filter: brightness(1.08);
 }
 
-.activity-card:nth-child(3) {
-    animation: cardRise linear both;
-    animation-timeline: view();
-    animation-range: entry 20% entry 58%;
-    will-change: transform, opacity;
-}
-
-.activity-card:nth-child(1) .card-num {
-    animation: numPop linear both;
-    animation-timeline: view();
-    animation-range: entry 12% entry 50%;
-    will-change: transform, opacity;
-}
-
-.activity-card:nth-child(2) .card-num {
-    animation: numPop linear both;
-    animation-timeline: view();
-    animation-range: entry 17% entry 55%;
-    will-change: transform, opacity;
-}
-
-.activity-card:nth-child(3) .card-num {
-    animation: numPop linear both;
-    animation-timeline: view();
-    animation-range: entry 22% entry 60%;
-    will-change: transform, opacity;
+.activity-card.aos-animate:hover .card-num,
+.activity-card:hover .card-num {
+    transform: translateY(-4px) scale(1.06) !important;
+    filter: drop-shadow(0 0 22px rgba(255, 255, 255, 0.85)) !important;
 }
 
 .mainc .booking {
-    animation: scrollFadeIn linear both;
-    animation-timeline: view();
-    animation-range: entry 12% entry 48%;
+    will-change: transform, opacity;
+    transition: transform 0.35s cubic-bezier(0.25, 1, 0.5, 1), filter 0.35s ease;
 }
 
-@keyframes cardRise {
-    0% {
-        opacity: 0;
-        transform: translateY(50px) scale(0.95);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0) scale(1);
-    }
-}
-
-@keyframes numPop {
-    0% {
-        opacity: 0;
-        transform: translateX(-35px) scale(0.85);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateX(0) scale(1);
-    }
+.mainc .booking.aos-animate:hover,
+.mainc .booking:hover {
+    transform: translateY(-4px) scale(1.06) !important;
+    filter: drop-shadow(0 8px 24px rgba(46, 204, 113, 0.55));
 }
 
 @keyframes marqueeSlide {
