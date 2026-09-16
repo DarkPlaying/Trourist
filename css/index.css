@@ -1,7 +1,3 @@
-html {
-    /* scroll-behavior: smooth is replaced by JS to correctly handle position:sticky sections */
-}
-
 html,
 body {
     margin: 0;
