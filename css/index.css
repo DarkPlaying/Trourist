@@ -1471,6 +1471,7 @@ content p {
 
     body {
         overflow: hidden;
+        position: fixed;
     }
 
     .block {
